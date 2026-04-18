@@ -18,10 +18,6 @@ app = FastAPI(
     version="1.0.0",
 )
 
-app.include_router(scoreboard_router, prefix="/api/v1", tags=["Scoreboard"])
-app.include_router(innings_router,    prefix="/api/v1", tags=["Innings"])
-app.include_router(extras_router,     prefix="/api/v1", tags=["Extras"])
-app.include_router(wicket_router,     prefix="/api/v1", tags=["Wickets"])
 app.include_router(discipline_router, prefix="/api/v1", tags=["Discipline"])
 
 
